@@ -341,7 +341,9 @@ function handleDeleteItemCart(id) {
     if (dataCart && dataCart.length > 0) {
         let indexItem = dataCart.findIndex((item) => item.id == id);
 
-        if (indexItem) {
+        console.log(indexItem);
+
+        if (indexItem || indexItem === 0) {
             dataCart.splice(indexItem, 1);
             RenderItemCartFunC(dataCart);
             HandleTotalValueFunc(dataCart);
