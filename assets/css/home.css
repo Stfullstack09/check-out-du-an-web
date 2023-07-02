@@ -1,0 +1,35 @@
+.home-page-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  color: #333;
+}
+.home-page-wrapper a {
+  text-decoration: none;
+  color: currentColor;
+}
+.home-page-wrapper a div {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home-page-wrapper a div img {
+  width: 70%;
+  height: 70%;
+}
+.home-page-wrapper a div:hover span {
+  color: #ee4d2d;
+}/*# sourceMappingURL=home.css.map */

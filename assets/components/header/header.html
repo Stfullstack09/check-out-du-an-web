@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/header.css" />
+    </head>
+    <body>
+        <div class="header-wrapper header__slide__down">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="left-header">
+                        <a href="/assets/page/store.html">
+                            <h1><i class="bi bi-amd"></i> Flag Shop</h1></a
+                        >
+                        <span>
+                            <a href="/assets/page/index.html">Home</a>
+                        </span>
+                        <span>
+                            <a href="/assets/page/admin.html">Admin</a>
+                        </span>
+                        <span>
+                            <a href="/assets/page/store.html">Store</a>
+                        </span>
+                    </div>
+                    <div class="right-header">
+                        <a href="tel:082342423">098765443</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let HeaderWp = document.querySelector(".header-wrapper");
+
+            console.log(HeaderWp);
+
+            function handleScroll() {
+                console.log("lot");
+                if (window.scrollY <= 70) {
+                    HeaderWp.classList.remove("header__slide__down");
+                } else if (window.scrollY >= 200) {
+                    HeaderWp.classList.add("header__slide__down");
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+        </script>
+    </body>
+</html>
