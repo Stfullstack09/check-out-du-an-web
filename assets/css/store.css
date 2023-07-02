@@ -359,4 +359,9 @@
 }
 .store-wrapper .customize-jsx-format.font-weight input {
   font-weight: 600;
+}
+@media (max-width: 576px) {
+  .store-wrapper .mb-mobile {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=store.css.map */

@@ -460,4 +460,10 @@
             }
         }
     }
+
+    @media (max-width: 576px) {
+        .mb-mobile {
+            margin-bottom: 20px;
+        }
+    }
 }

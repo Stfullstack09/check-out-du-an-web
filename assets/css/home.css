@@ -10,6 +10,15 @@
   gap: 60px;
   color: #333;
 }
+@media (max-width: 575.98px) {
+  .home-page-wrapper {
+    flex-direction: column;
+  }
+  .home-page-wrapper div {
+    width: 300px;
+    height: 300px;
+  }
+}
 .home-page-wrapper a {
   text-decoration: none;
   color: currentColor;

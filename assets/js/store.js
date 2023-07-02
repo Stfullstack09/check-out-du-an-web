@@ -34,7 +34,7 @@ function handleFormatVND(price) {
 
 // ham tao ra cac element render
 function ProductCard(item) {
-    return `<div class="col-12 col-lg-3">
+    return `<div class="col-12 col-lg-3 mb-mobile">
     <div>
       <div
                 class="image-section product-trend"

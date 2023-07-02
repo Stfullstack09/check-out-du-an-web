@@ -27,7 +27,9 @@ function ProductItem(item, index) {
     <td>${item.type}</td>
     <td>${handleFormatVND(item.price)}</td>
     <td class="text-center">
-        <button class="btn btn-success" onclick="handleClickEdit(${item.id})">
+        <button class="btn btn-success mb-mobile" onclick="handleClickEdit(${
+            item.id
+        })">
             <i class="bi bi-ticket-detailed-fill"></i>
         </button>
         <button class="btn btn-warning" onclick="handleDelete(${item.id})">

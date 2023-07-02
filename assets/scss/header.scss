@@ -19,7 +19,7 @@
         height: 70px;
         animation: HeaderDown linear 0.4s forwards;
         border-bottom: 1px solid transparent;
-        box-shadow: 0 0 20px 2px rgba(1, 1, 1, 0.4);
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
         transition: background-color 0.3s, opacity 0.3s;
         z-index: 999;
     }
@@ -37,6 +37,16 @@
         h1 {
             font-size: 30px;
             cursor: pointer;
+        }
+
+        .dropdown-menu-wrapper {
+            display: none;
+        }
+
+        @media (max-width: 575.98px) {
+            span {
+                display: none;
+            }
         }
 
         span {
@@ -79,5 +89,95 @@
                 background-color: rgba(0, 0, 0, 0.07);
             }
         }
+
+        .dropdown-menu-wrapper {
+            display: none;
+        }
+
+        @media (max-width: 575.98px) {
+            a {
+                display: none;
+            }
+
+            .dropdown-menu-wrapper {
+                display: block;
+                background-color: transparent;
+                font-size: 30px;
+                padding-left: 10px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .menu-phone-wrappper {
+        position: fixed;
+        width: 100vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        left: 0;
+        transform: translateX(100%);
+
+        .over-lay-header-mobile {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        ul {
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            list-style: none;
+            padding-top: 20px;
+            transition: all linear 0.4s;
+            transform: translateX(100%);
+            opacity: 0;
+
+            li {
+                padding: 10px 10px;
+                color: #333;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    text-decoration: none;
+                    color: currentColor;
+                }
+            }
+
+            .close-header {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                color: #333;
+            }
+        }
+    }
+}
+
+#header-active:checked ~ .menu-phone-wrappper {
+    transform: translateX(0);
+
+    ul {
+        padding-top: 50px;
+        opacity: 1;
+        transform: translateX(0);
+        padding-left: 0;
     }
 }
