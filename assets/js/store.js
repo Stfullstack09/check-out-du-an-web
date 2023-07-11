@@ -19,7 +19,7 @@ CountCart.innerHTML = JSON.parse(localStorage.getItem("CartList"))
 
 // config ajax
 const settings = {
-    url: "https://6219f55a81d4074e85b5d5e2.mockapi.io/son/a/1/product",
+    url: "https://64959f4db08e17c91792686e.mockapi.io/Product",
     method: "GET",
     timeout: 0,
 };
@@ -34,7 +34,7 @@ function handleFormatVND(price) {
 
 // ham tao ra cac element render
 function ProductCard(item) {
-    return `<div class="col-12 col-lg-3 mb-mobile">
+    return `<div class="col-6 col-lg-4 col-xl-3 mb-mobile">
     <div>
       <div
                 class="image-section product-trend"

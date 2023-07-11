@@ -59,7 +59,7 @@ function Render(list) {
 
 function Fetch() {
     axios
-        .get("https://6219f55a81d4074e85b5d5e2.mockapi.io/son/a/1/product")
+        .get("https://64959f4db08e17c91792686e.mockapi.io/Product")
         .then((response) => {
             if (response.status === 200) {
                 ProductList = [...response.data];
@@ -110,7 +110,7 @@ FormAddNewProduct.onsubmit = (e) => {
     if (DataMethod === "post") {
         axios
             .post(
-                "https://6219f55a81d4074e85b5d5e2.mockapi.io/son/a/1/product",
+                "https://64959f4db08e17c91792686e.mockapi.io/Product",
                 dataBuild
             )
             .then((response) => {
@@ -129,7 +129,7 @@ FormAddNewProduct.onsubmit = (e) => {
     if (DataMethod === "put" && IdProduct) {
         axios
             .put(
-                `https://6219f55a81d4074e85b5d5e2.mockapi.io/son/a/1/product/${IdProduct}`,
+                `https://64959f4db08e17c91792686e.mockapi.io/Product/${IdProduct}`,
                 dataBuild
             )
             .then((response) => {
@@ -177,9 +177,7 @@ function handleDelete(id) {
     if (!check) return;
 
     axios
-        .delete(
-            `https://6219f55a81d4074e85b5d5e2.mockapi.io/son/a/1/product/${id}`
-        )
+        .delete(`https://64959f4db08e17c91792686e.mockapi.io/Product/${id}`)
         .then((response) => {
             if (response.status === 200) {
                 Fetch();
