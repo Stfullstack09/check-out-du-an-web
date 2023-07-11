@@ -34,4 +34,18 @@
 }
 .cart-wrapper-icon:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  .d-sm-none-cus {
+    display: none;
+  }
+  .d-sm-block-cus {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  .d-sm-block-cus {
+    display: none;
+  }
 }/*# sourceMappingURL=global.css.map */

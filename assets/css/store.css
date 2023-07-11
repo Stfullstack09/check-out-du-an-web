@@ -364,4 +364,122 @@
   .store-wrapper .mb-mobile {
     margin-bottom: 20px;
   }
+}
+
+.card-customize {
+  position: relative;
+  flex-shrink: 0;
+  height: 300px;
+  width: 200px;
+  background-color: #010101;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 7px 5px -5px #4d4b4b;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+.card-customize:hover {
+  height: 450px;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.card-customize:hover .details {
+  bottom: 0 !important;
+}
+.card-customize:hover .details .wrapper {
+  display: block !important;
+}
+.card-customize .top-bar {
+  transform: translateY(0.5rem);
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1rem;
+  display: flex;
+}
+.card-customize .top-bar .stocks {
+  font-size: 0.8rem;
+  color: lightgreen;
+}
+.card-customize .img-container {
+  position: absolute;
+  height: 185px;
+  width: 185px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transform: translateY(35px);
+  display: flex;
+}
+.card-customize .img-container img {
+  width: 100%;
+  align-self: center;
+}
+.card-customize .img-container .out-of-stock-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.card-customize .img-container .out-of-stock-cover span {
+  font-weight: 900;
+  color: rgba(255, 200, 200, 0.75);
+  font-size: 1.5rem;
+}
+.card-customize .details {
+  position: absolute;
+  height: 220px;
+  width: 100%;
+  background-color: #2e2f33;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  bottom: -165px;
+  transition: 0.25s;
+  color: #fff;
+}
+.card-customize .details .name-fav {
+  justify-content: space-between;
+}
+.card-customize .details .name-fav strong {
+  font-weight: 600;
+  color: #fff;
+}
+.card-customize .details .name-fav button {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card-customize .details .wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(5px);
+  display: none;
+}
+.card-customize .details .wrapper p {
+  font-size: 0.9rem;
+  padding: 5px 0;
+  font-weight: light;
+}
+.card-customize .details .purchase {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+.card-customize .details .purchase p {
+  font-weight: 500;
+}
+.card-customize .btn-add {
+  background: none;
+  color: white;
+  padding: 6px 10px;
 }/*# sourceMappingURL=store.css.map */

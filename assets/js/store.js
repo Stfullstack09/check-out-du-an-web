@@ -34,8 +34,8 @@ function handleFormatVND(price) {
 
 // ham tao ra cac element render
 function ProductCard(item) {
-    return `<div class="col-6 col-lg-4 col-xl-3 mb-mobile">
-    <div>
+    return `<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-mobile">
+    <div class="d-sm-none-cus">
       <div
                 class="image-section product-trend"
             >
@@ -94,6 +94,37 @@ function ProductCard(item) {
                     </p>
                 </div>
             </div>
+    </div>
+    <div class="d-sm-block-cus">
+    <div class="card-customize">
+        <div class="top-bar">
+        <i class="fab fa-apple"></i>
+        <em class="stocks">In Stock</em>
+        </div>
+        <div class="img-container">
+        <img class="product-img" src="https://purepng.com/public/uploads/large/apple-watch-pcq.png" alt="">
+        <div class="out-of-stock-cover"><span>Out Of Stock</span></div>
+        </div>
+        <div class="details">
+        <div class="name-fav">
+            <strong class="product-name">${item.name}</strong>
+            <button onclick="this.classList.toggle(&quot;fav&quot;)" class="heart"><i class="fas fa-heart"></i></button>
+        </div>
+        <div class="wrapper">
+            <h5>You’ve never seen a watch like this</h5>
+            <p> ${item.desc}</p>
+        </div>
+        <div class="purchase">
+            <p class="product-price">$ 500</p>
+            <span class="btn-add">
+    <div>
+        <button class="btn btn-primary" onclick="handleAddToCart(${
+            item.id
+        });">Add <i class="fas fa-chevron-right"></i></button>
+    </div></span>
+        </div>
+        </div>
+    </div>
     </div>
 </div>`;
 }
