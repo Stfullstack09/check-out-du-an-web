@@ -102,7 +102,7 @@ function ProductCard(item) {
         <em class="stocks">In Stock</em>
         </div>
         <div class="img-container">
-        <img class="product-img" src="https://purepng.com/public/uploads/large/apple-watch-pcq.png" alt="">
+        <img class="product-img" src="${item.img}" alt="">
         <div class="out-of-stock-cover"><span>Out Of Stock</span></div>
         </div>
         <div class="details">
