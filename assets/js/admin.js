@@ -7,6 +7,28 @@ const ModalBootstrapBTNHidden = document.querySelector(
 );
 const filterPrice = document.querySelector("#filter-product--js-admin");
 const InputSearch = document.querySelector("#input-search-input");
+const Logout = document.querySelector("#log-out");
+
+function CheckAuth() {
+    const isLogin = localStorage.getItem("isLogin");
+
+    if (!isLogin) {
+        window.location.href = "/login/login.html";
+    }
+}
+
+CheckAuth();
+
+Logout.onclick = () => {
+    let check = confirm("Bạn chắc chắn muốn đăng xuất !");
+
+    if (!check) return;
+
+    localStorage.removeItem("isLogin");
+    localStorage.removeItem("user");
+
+    CheckAuth();
+};
 
 let ProductList = [];
 let ProductSearch = [];
