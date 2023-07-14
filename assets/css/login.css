@@ -98,6 +98,11 @@
   position: relative;
   flex-shrink: 0;
 }
+@media (max-width: 576px) {
+  .auth-container .content-authentication .row-authentication .jsx-lef-authentication {
+    display: none;
+  }
+}
 .auth-container .content-authentication .row-authentication .jsx-lef-authentication .content-left {
   padding: 10px;
 }
@@ -168,11 +173,6 @@
   font-weight: 400;
   color: rgb(99, 115, 129);
 }
-@media (max-width: 576px) {
-  .auth-container .content-authentication .row-authentication .jsx-right-authentication .title-authentication {
-    margin-top: 60px;
-  }
-}
 .auth-container .content-authentication .row-authentication .jsx-right-authentication .row-jax {
   padding-left: 24px;
   padding-right: 24px;
@@ -196,6 +196,11 @@
 @media (max-width: 1200px) {
   .auth-container .content-authentication .row-authentication .jsx-right-authentication .row-jax .chuk-jax-auth {
     padding: 16px 0;
+  }
+}
+@media (max-width: 576px) {
+  .auth-container .content-authentication .row-authentication .jsx-right-authentication .row-jax .chuk-jax-auth {
+    width: 300px;
   }
 }
 .auth-container .content-authentication .row-authentication .jsx-right-authentication .row-jax .chuk-jax-auth .forgot-pass button {
@@ -292,6 +297,11 @@
   font-family: "Public Sans", sans-serif;
   border-radius: 6px;
   padding-left: 10px;
+}
+@media (max-width: 576px) {
+  .auth-container .content-authentication .row-authentication .jsx-right-authentication .jsx-input-authentication {
+    width: 278px;
+  }
 }
 @media (max-width: 1200px) {
   .auth-container .content-authentication .row-authentication .jsx-right-authentication .jsx-input-authentication {

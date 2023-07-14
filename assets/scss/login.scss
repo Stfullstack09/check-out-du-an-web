@@ -107,6 +107,10 @@
                 position: relative;
                 flex-shrink: 0;
 
+                @media (max-width: 576px) {
+                    display: none;
+                }
+
                 .content-left {
                     padding: 10px;
 
@@ -190,7 +194,7 @@
                     // }
 
                     @media (max-width: 576px) {
-                        margin-top: 60px;
+                        // margin-top: 60px;
                     }
                 }
 
@@ -216,6 +220,10 @@
 
                         @media (max-width: 1200px) {
                             padding: 16px 0;
+                        }
+
+                        @media (max-width: 576px) {
+                            width: 300px;
                         }
 
                         .forgot-pass {
@@ -341,6 +349,10 @@
                     font-family: "Public Sans", sans-serif;
                     border-radius: 6px;
                     padding-left: 10px;
+
+                    @media (max-width: 576px) {
+                        width: 278px;
+                    }
 
                     @media (max-width: 1200px) {
                         height: 48px;
